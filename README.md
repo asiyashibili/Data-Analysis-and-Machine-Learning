@@ -1,4 +1,4 @@
-# Data Analysis and Machine Learning Projects
+# Data Analysis and Machine Learning Projects (Tasks 1–8)
 
 ## Overview
 
@@ -174,74 +174,51 @@ The objective of this project collection is to apply analytical and machine lear
 
 ### Task 8: Google Play Store App Analysis
 
-**Objective:** Explore app characteristics, ratings, installs, pricing, and user-review sentiment to identify patterns in the GooglePlay Store dataset.
+**Objective:** Explore app characteristics, ratings, installs, pricing, and user-review sentiment to identify patterns in the Google Play Store dataset.
 
-Datasets: googleplaystore.csv, googleplaystore_user_reviews.csv
+**Datasets:** `googleplaystore.csv`, `googleplaystore_user_reviews.csv`
 
-Work performed:
+**Work performed:**
+- Cleaned and explored app and user-review datasets.
+- Analyzed app categories, ratings, installs, and free-versus-paid distribution.
+- Examined app pricing and calculated estimated revenue using price and reported installs.
+- Analyzed review sentiment using TextBlob.
+- Compared sentiment patterns across app categories.
+- Created visualizations, including an interactive Plotly chart.
 
-Cleaned and explored app and user-review datasets.
+**Key findings:**
+- The cleaned app dataset contained 10,358 rows.
+- The average app rating was approximately 4.21.
+- The cleaned review dataset contained 29,692 rows.
+- TextBlob classified 19,015 reviews as positive, 6,321 as negative, and 4,356 as neutral.
+- The FAMILY category contained the largest number of apps in the dataset.
+- The relationship between app size and installs was very weak, with a correlation of approximately 0.05.
 
-Analyzed app categories, ratings, installs, and free-versus-paid distribution.
+**Tools:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, TextBlob
 
-Examined app pricing and calculated estimated revenue using price and reported installs.
+**Note:** Revenue calculated from listed price and reported installs is an estimate, not verified actual revenue. Dataset anomalies and missing information should be considered when interpreting the results.
 
-Analyzed review sentiment using TextBlob.
+## Skills Demonstrated
 
-Compared sentiment patterns across app categories.
+- Data cleaning and preprocessing
+- Exploratory data analysis (EDA)
+- Descriptive statistics and correlation analysis
+- Grouping, aggregation, and feature engineering
+- Time-based sales analysis
+- Data visualization and interpretation
+- RFM analysis and K-Means clustering
+- Text preprocessing and TF-IDF feature extraction
+- Regression modelling and evaluation
+- Classification and model comparison
+- Handling imbalanced datasets using SMOTE
+- Evaluation using precision, recall, RMSE, R-squared, and ROC-AUC
+- Translating analytical results into potential business insights
 
-Created visualizations, including an interactive Plotly chart.
-
-Key findings:
-
-The cleaned app dataset contained 10,358 rows.
-
-The average app rating was approximately 4.21.
-
-The cleaned review dataset contained 29,692 rows.
-
-TextBlob classified 19,015 reviews as positive, 6,321 as negative, and 4,356 as neutral.
-
-The FAMILY category contained the largest number of apps in the dataset.
-
-The relationship between app size and installs was very weak, with a correlation of approximately 0.05.
-
-Tools: Pandas, NumPy, Matplotlib, Seaborn, Plotly, TextBlob
-
-Note: Revenue calculated from listed price and reported installs is an estimate, not verified actual revenue. Dataset anomalies and missing information should be considered when interpreting the results.
-
-Skills Demonstrated
-
-Data cleaning and preprocessing
-
-Exploratory data analysis (EDA)
-
-Descriptive statistics and correlation analysis
-
-Grouping, aggregation, and feature engineering
-
-Time-based sales analysis
-
-Data visualization and interpretation
-
-RFM analysis and K-Means clustering
-
-Text preprocessing and TF-IDF feature extraction
-
-Regression modelling and evaluation
-
-Classification and model comparison
-
-Handling imbalanced datasets using SMOTE
-
-Evaluation using precision, recall, RMSE, R-squared, and ROC-AUC
-
-Translating analytical results into potential business insights
-
-Repository Structure
+## Repository Structure
 
 The notebooks are organized by task. Each notebook contains the code and analysis for its respective dataset.
 
+```text
 .
 ├── README.md
 ├── Task 1 - Retail Sales Analysis.ipynb
@@ -252,14 +229,17 @@ The notebooks are organized by task. Each notebook contains the code and analysi
 ├── Task 6 - Wine Quality Classification.ipynb
 ├── Task 7 - Credit Card Fraud Detection.ipynb
 └── Task 8 - Google Play Store Analysis.ipynb
+```
 
-The filenames above are illustrative. Replace them with your actual notebook filenames if they differ.
+*The filenames above are illustrative. Replace them with your actual notebook filenames if they differ.*
 
-Conclusion
+## Conclusion
 
 These eight tasks provided practical experience in analysing different types of data and applying Python-based analytical and machine learning techniques. The collection ranges from exploratory analysis and data preparation to customer segmentation, text classification, regression, and fraud detection.
 
 The projects demonstrate a developing foundation in data analytics, statistical thinking, visualization, and machine learning. Further improvements can include more systematic model validation, additional evaluation metrics, deeper investigation of data-quality issues, and clearer presentation of findings.
 
-Author: Asiya B
-Focus Areas: Data Analytics | Business Analytics | Python | Machine Learning
+---
+
+**Author:** Asiya B  
+**Focus Areas:** Data Analytics | Business Analytics | Python | Machine Learning
